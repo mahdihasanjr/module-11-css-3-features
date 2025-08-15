@@ -1,0 +1,72 @@
+
+body{
+     margin:50px 200px;
+}
+@keyframes ball {
+    from{
+        left:0px;
+        top:0px;
+        transform: scale(0.5);
+    }
+    to{
+        left:400px;
+        top:150px;
+        transform: scale(2);
+        outline: 10px solid rgb(255, 183, 2);
+        outline-offset: 10px;
+        background-color: blue;
+    }
+    
+}
+.stage{
+    width:600px;
+    height: 350px;
+    background-color: green;
+    border:2px solid black;
+   
+}
+
+@keyframes text {
+
+    0%{
+        left:0;
+        top:0;
+        opacity: 0.3;
+        font-weight: 400;
+    }
+    25%{
+        left:100px;
+        top:200px;
+        opacity: 0.8;
+        font-weight: 600;
+    }
+    50%{
+        left:100;
+        top: 0px;
+        color:white;
+        opacity: 0.9;
+        font-weight: 700;
+    }
+    100%{
+        left:310px;
+        top:280px;
+        color:red;
+        opacity: 1;
+        font-weight: 900;
+
+    }
+}
+p{
+    color:white;
+    font-size: 2rem;
+    position: relative;
+    animation: text 4s ease-out 0.2s infinite alternate-reverse ;
+}
+.ball{
+    width:100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position:relative;
+    animation: ball 3s ease-in-out 0.5s infinite alternate-reverse ;
+}

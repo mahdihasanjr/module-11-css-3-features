@@ -1,10 +1,10 @@
 .ellipsis{
-    border:2px solid steelblue;
     width:200px;
-    white-space: nowrap;
-    overflow:hidden;
-    /* text-overflow:ellipsis; */
-    text-overflow:clip;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* text-overflow:clip; */
+
 }
 
 .box{

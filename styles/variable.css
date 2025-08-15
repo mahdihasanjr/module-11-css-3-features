@@ -1,0 +1,39 @@
+
+:root{
+    --primary-text-color:rgba(1, 8, 20, 0.721);
+    --primary-bg-color:rgba(64, 239, 195, 0.737); 
+    --font-size: 1rem;
+}
+
+
+h1{
+    color:var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+    
+}
+h5{
+    color:var(--primary-text-color);
+    font-size: var(--font-size);
+}
+.box{
+    border:1px solid var(--primary-text-color);
+    padding: 20px;
+    background-color: var(--primary-bg-color);
+    width: calc(100% - 200px);
+}
+.box p{
+    color:var(--primary-text-color);
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px calc(100% - 200px - 20px);
+    gap:20px;
+}
+.sidebar{
+    background-color: lightgray;
+}
+.content{
+    background-color: lightblue;
+    
+}
